@@ -1,0 +1,7 @@
+{
+  "name": "kyukyu-monorepo",
+  "version": "0.0.0",
+  "description": "kyukyu's side project monorepo",
+  "author": "kyukyu",
+  "packageManager": "yarn@4.1.1"
+}

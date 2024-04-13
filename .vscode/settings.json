@@ -1,0 +1,7 @@
+{
+  "files.eol": "\n",
+  "search.exclude": {
+    "**/.yarn": true,
+    "**/.pnp.*": true
+  }
+}
