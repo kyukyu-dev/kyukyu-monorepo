@@ -1,0 +1,10 @@
+{
+  "name": "@kyukyu/esbuild-config",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "esbuild": "0.16.17"
+  }
+}
