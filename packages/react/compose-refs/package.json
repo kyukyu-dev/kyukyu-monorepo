@@ -2,6 +2,22 @@
   "name": "@kyukyu/react-compose-refs",
   "version": "1.0.0",
   "license": "MIT",
+  "type": "module",
+  "main": "dist/index.js",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "scripts": {
+    "build": "yarn clean && yarn build:js && yarn build:type",
+    "build:js": "node esbuild.js",
+    "build:type": "run -T tsc",
+    "clean": "rm -rf dist",
+    "dev": "yarn build:js --watch && yarn build:type --watch"
+  },
   "peerDependencies": {
     "@types/react": "*",
     "react": "^16.8 || ^17.0 || ^18.0"
@@ -12,6 +28,7 @@
     }
   },
   "devDependencies": {
+    "@kyukyu/esbuild-config": "workspace:^",
     "@types/react": "^18.2.78",
     "react": "^18.2.0"
   }
