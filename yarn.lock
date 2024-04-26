@@ -233,7 +233,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@kyukyu/esbuild-config@workspace:packages/esbuild-config":
+"@kyukyu/esbuild-config@workspace:^, @kyukyu/esbuild-config@workspace:packages/esbuild-config":
   version: 0.0.0-use.local
   resolution: "@kyukyu/esbuild-config@workspace:packages/esbuild-config"
   dependencies:
@@ -241,10 +241,27 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@kyukyu/react-compose-refs@workspace:packages/react/compose-refs":
+"@kyukyu/react-compose-refs@workspace:^, @kyukyu/react-compose-refs@workspace:packages/react/compose-refs":
   version: 0.0.0-use.local
   resolution: "@kyukyu/react-compose-refs@workspace:packages/react/compose-refs"
   dependencies:
+    "@kyukyu/esbuild-config": "workspace:^"
+    "@types/react": "npm:^18.2.78"
+    react: "npm:^18.2.0"
+  peerDependencies:
+    "@types/react": "*"
+    react: ^16.8 || ^17.0 || ^18.0
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+  languageName: unknown
+  linkType: soft
+
+"@kyukyu/react-slot@workspace:packages/react/slot":
+  version: 0.0.0-use.local
+  resolution: "@kyukyu/react-slot@workspace:packages/react/slot"
+  dependencies:
+    "@kyukyu/react-compose-refs": "workspace:^"
     "@types/react": "npm:^18.2.78"
     react: "npm:^18.2.0"
   peerDependencies:

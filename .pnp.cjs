@@ -20,13 +20,18 @@ const RAW_RUNTIME_STATE =
     {\
       "name": "@kyukyu/react-compose-refs",\
       "reference": "workspace:packages/react/compose-refs"\
+    },\
+    {\
+      "name": "@kyukyu/react-slot",\
+      "reference": "workspace:packages/react/slot"\
     }\
   ],\
   "enableTopLevelFallback": true,\
   "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
   "fallbackExclusionList": [\
     ["@kyukyu/esbuild-config", ["workspace:packages/esbuild-config"]],\
-    ["@kyukyu/react-compose-refs", ["workspace:packages/react/compose-refs"]],\
+    ["@kyukyu/react-compose-refs", ["virtual:f8a06f99b438acc73acc394a77c38b9f4a60243321bd6ffb345a9848fcd1e393a207d9e0802182991d3649d3deeb645c33bd6e5d5a125d7c6e46baa271c1ab5a#workspace:packages/react/compose-refs", "workspace:packages/react/compose-refs"]],\
+    ["@kyukyu/react-slot", ["workspace:packages/react/slot"]],\
     ["kyukyu-monorepo", ["workspace:."]]\
   ],\
   "fallbackPool": [\
@@ -356,10 +361,37 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@kyukyu/react-compose-refs", [\
+      ["virtual:f8a06f99b438acc73acc394a77c38b9f4a60243321bd6ffb345a9848fcd1e393a207d9e0802182991d3649d3deeb645c33bd6e5d5a125d7c6e46baa271c1ab5a#workspace:packages/react/compose-refs", {\
+        "packageLocation": "./.yarn/__virtual__/@kyukyu-react-compose-refs-virtual-d3347df67a/1/packages/react/compose-refs/",\
+        "packageDependencies": [\
+          ["@kyukyu/react-compose-refs", "virtual:f8a06f99b438acc73acc394a77c38b9f4a60243321bd6ffb345a9848fcd1e393a207d9e0802182991d3649d3deeb645c33bd6e5d5a125d7c6e46baa271c1ab5a#workspace:packages/react/compose-refs"],\
+          ["@kyukyu/esbuild-config", "workspace:packages/esbuild-config"],\
+          ["@types/react", "npm:18.2.78"],\
+          ["react", "npm:18.2.0"]\
+        ],\
+        "packagePeers": [\
+          "@types/react",\
+          "react"\
+        ],\
+        "linkType": "SOFT"\
+      }],\
       ["workspace:packages/react/compose-refs", {\
         "packageLocation": "./packages/react/compose-refs/",\
         "packageDependencies": [\
           ["@kyukyu/react-compose-refs", "workspace:packages/react/compose-refs"],\
+          ["@kyukyu/esbuild-config", "workspace:packages/esbuild-config"],\
+          ["@types/react", "npm:18.2.78"],\
+          ["react", "npm:18.2.0"]\
+        ],\
+        "linkType": "SOFT"\
+      }]\
+    ]],\
+    ["@kyukyu/react-slot", [\
+      ["workspace:packages/react/slot", {\
+        "packageLocation": "./packages/react/slot/",\
+        "packageDependencies": [\
+          ["@kyukyu/react-slot", "workspace:packages/react/slot"],\
+          ["@kyukyu/react-compose-refs", "virtual:f8a06f99b438acc73acc394a77c38b9f4a60243321bd6ffb345a9848fcd1e393a207d9e0802182991d3649d3deeb645c33bd6e5d5a125d7c6e46baa271c1ab5a#workspace:packages/react/compose-refs"],\
           ["@types/react", "npm:18.2.78"],\
           ["react", "npm:18.2.0"]\
         ],\
